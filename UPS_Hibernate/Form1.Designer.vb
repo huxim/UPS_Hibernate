@@ -28,7 +28,6 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Timer60s = New System.Windows.Forms.Timer(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.BackgroundWorkerPing = New System.ComponentModel.BackgroundWorker()
@@ -69,11 +68,6 @@ Partial Class Form1
         Me.Button2.Text = "退出"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Timer60s
-        '
-        Me.Timer60s.Enabled = True
-        Me.Timer60s.Interval = 6000
-        '
         'NotifyIcon1
         '
         Me.NotifyIcon1.ContextMenuStrip = Me.ContextMenuStrip1
@@ -110,7 +104,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Timer60s As Timer
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents BackgroundWorkerPing As System.ComponentModel.BackgroundWorker
